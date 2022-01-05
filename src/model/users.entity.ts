@@ -17,6 +17,4 @@ export class Users extends BaseEntity {
   @Column({ type: 'varchar', length: 200 })
   name: string;
 
-  @OneToMany(() => Address, (user_id: Address) => user_id.address)
-  
 }
