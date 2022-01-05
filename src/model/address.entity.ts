@@ -5,7 +5,7 @@ import { Users } from './users.entity'
 @Entity({ name: 'address' })
 export class Address extends BaseEntity {
 
-  @ManyToOne(() => Users, (user_id: Users) => user_id.address)
+  @ManyToOne(() => Users, (user_id: Users) => user_id.id)
   user_id: Users;
 
   @Column({ type: 'text' })
